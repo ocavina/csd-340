@@ -1,0 +1,32 @@
+/*
+Oscar Avina
+06/20/2026
+Module 4.2 Assignment
+*/
+
+h1 {
+  text-align: center;
+}
+
+#image-gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 10%;
+}
+
+h3 {
+  text-align: center;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 0.75em;
+}
+
+#landing-page-link {
+  float: right;
+}
