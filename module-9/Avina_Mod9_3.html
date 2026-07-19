@@ -1,0 +1,146 @@
+<!--
+Oscar Avina
+07/18/2026
+Module 9.3 Assignment
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta
+      name="description"
+      content="CSD 340 Web Development with HTML and CSS"
+    />
+    <meta
+      name="keywords"
+      content="CSD 340, Web Development with HTML and CSS, Bellevue University"
+    />
+    <meta name="author" content="Oscar Avina" />
+    <meta name="description" content="Assignment 9.3: JavaScript - Part 1" />
+    <link href="Avina_Mod9_3.css" type="text/css" rel="stylesheet" />
+
+    <script>
+      var firstVariableValue = "Joe Clark";
+      var secondVariableValue = "incorrigible";
+      var thirdVariableValue = "ghosts";
+      var fourthVariableValue = "Eastside";
+    </script>
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Assignment 9.3: JavaScript - Part 1</h1>
+      <h2>
+        Principal Joe Clark Addresses Students: 'Welcome to the New Eastside
+        High' from the movie "Lean on Me"
+      </h2>
+      <p>
+        <strong>Principal Clark:</strong> Alright people settle down, now. You
+        people get down off the seats. Settle down, boys and girls, settle down.
+        May I have your attention? Quiet! Quiet down! Take your seats! You
+        people sit down. Sit down. Quiet down. I am your new principal. My name
+        is <span id="first">_________</span>. I want you to be quiet! I want you
+        to listen! From here out, there will be no smoking in this school! All
+        of you who are smoking, put out your cigarettes on the soles of your
+        shoes; put the butts in your pockets! Now! I'm going to ask the people
+        up on the stage to open with our school song...Mr. Rollin....
+        <strong>Students:</strong> Hahaha. You believe this guy? [General
+        banter, mock singing, chaos.]
+      </p>
+
+      <p>
+        <strong>Principal Clark:</strong> Alright, that's enough, Mr. Rollin,
+        that's enough. I want all of you to take a good look at these people on
+        the risers behind me. These people have been here up to five years and
+        done absolutely nothing. These people are drug dealers and drug users.
+        They have taken up space. They have disrupted the school. They have
+        harassed your teachers. And they have intimated you. Well, times are
+        about to change. You will not be bothered in Joe Clark's school.
+        <strong>Kaneesha Carter:</strong> Yeah!!
+        <strong>Principal Clark:</strong> These people are
+        <span id="second">_________</span>. And since none of them could
+        graduate anyway, you are all expurgated. You are dismissed! You are out
+        of here forever! I wish you well.
+      </p>
+
+      <p>
+        <strong>Principal Clark:</strong> Next time it may be you. If you do no
+        better than they did, next time it will be you. They said this school
+        was dead, like the cemetery it's built on. But we call our Eastside
+        teams "<span id="third">_________</span>," don't we? And what are
+        ghosts? Ghosts are spirits that rise from the dead! I want you to be my
+        ghosts. You are going to lead our resurrection by defying the
+        expectation that all of us are doomed to failure. My motto is simple: If
+        you do not succeed in life, I don't want you to blame your parents. I
+        don't want you to blame the white man! I want you to blame yourselves!
+        The responsibility is yours!!
+      </p>
+
+      <p>
+        <strong>Principal Clark:</strong> In two weeks we have a practice exam
+        -- and a minimum basic skills test on April 13th. That's a hundred and
+        ten school days from now. But it's not just about those test scores. If
+        you do not have these basic skills, you will find yourselves locked out!
+        Locked out of that American Dream that you see advertised on TV -- that
+        they tell you is so easy to get. You are here for one reason -- one
+        reason only: to learn, to work for what you want. The alternative is to
+        waste your time and to fall into the trap of crime, drugs, and death.
+        Does everyone understand that? Do all of you understand me?! Then
+        welcome to the new <span id="fourth">_________</span> High!
+      </p>
+
+      <p>
+        <button
+          type="button"
+          onclick="
+            document.getElementById('first').innerHTML = firstVariableValue
+          "
+        >
+          Joe Clark
+        </button>
+
+        <br />
+
+        <button
+          type="button"
+          onclick="
+            document.getElementById('second').innerHTML = secondVariableValue
+          "
+        >
+          incorrigible
+        </button>
+
+        <br />
+
+        <button
+          type="button"
+          onclick="
+            document.getElementById('third').innerHTML = thirdVariableValue
+          "
+        >
+          ghosts
+        </button>
+
+        <br />
+
+        <button
+          type="button"
+          onclick="
+            document.getElementById('fourth').innerHTML = fourthVariableValue
+          "
+        >
+          Eastside
+        </button>
+      </p>
+
+      <hr />
+
+      <address>
+        <p><a href="https://www.bellevue.edu/">Bellevue University</a></p>
+        <p>1000 Galvin Road South</p>
+        <p>Bellevue, Nebraska 68005</p>
+      </address>
+    </div>
+  </body>
+</html>
