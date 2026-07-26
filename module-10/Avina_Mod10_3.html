@@ -1,0 +1,54 @@
+<!--
+Oscar Avina
+07/26/2026
+Module 10.3 Assignment
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta
+      name="description"
+      content="CSD 340 Web Development with HTML and CSS"
+    />
+    <meta
+      name="keywords"
+      content="CSD 340, Web Development with HTML and CSS, Bellevue University"
+    />
+    <meta name="author" content="Oscar Avina" />
+    <meta name="description" content="Assignment 10.3: JavaScript - Part 2" />
+
+    <script>
+      var showingBefore = true;
+
+      function changeImage() {
+        var brisketImage = document.getElementById("brisketImage");
+
+        if (showingBefore == true) {
+          brisketImage.src = "brisket_after.webp";
+          showingBefore = false;
+        } else {
+          brisketImage.src = "brisket_before.webp";
+          showingBefore = true;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+    <p>
+      Click the picture to switch between the brisket before and after it was
+      smoked.
+    </p>
+
+    <img
+      id="brisketImage"
+      src="brisket_before.webp"
+      alt="A brisket before and after smoking"
+      height="300"
+      onclick="changeImage()"
+    />
+  </body>
+</html>
