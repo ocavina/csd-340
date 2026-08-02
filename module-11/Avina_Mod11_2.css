@@ -1,0 +1,21 @@
+/*
+Oscar Avina
+08/02/2026
+Module 11.2 Assignment
+*/
+
+button {
+  color: white;
+}
+
+#addButton {
+  background-color: green;
+}
+
+#deleteButton {
+  background-color: red;
+}
+
+#sortButton {
+  background-color: blue;
+}

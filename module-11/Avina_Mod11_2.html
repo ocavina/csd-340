@@ -1,0 +1,88 @@
+<!--
+Oscar Avina
+08/02/2026
+Module 11.2 Assignment
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta
+      name="description"
+      content="CSD 340 Web Development with HTML and CSS"
+    />
+    <meta
+      name="keywords"
+      content="CSD 340, Web Development with HTML and CSS, Bellevue University"
+    />
+    <meta name="author" content="Oscar Avina" />
+    <meta name="description" content="Assignment 11.2: JavaScript - Part 3" />
+    <link rel="stylesheet" href="Avina_Mod11_2.css" />
+    <script type="text/javascript">
+      var tasks = [];
+
+      function addItem() {
+        var task = document.getElementById("taskInput").value;
+
+        tasks.push(task);
+
+        alert("Item: " + task + " Added as Item " + tasks.length);
+
+        displayItems();
+      }
+
+      function deleteLastItem() {
+        var deletedItem = tasks.pop();
+
+        alert("Item: " + deletedItem + " Deleted");
+
+        displayItems();
+      }
+
+      function displayItems() {
+        var output = "";
+
+        for (var i = 0; i < tasks.length; i++) {
+          output += "<li>" + tasks[i] + "</li>";
+        }
+
+        document.getElementById("toDoList").innerHTML = output;
+      }
+
+      function sortItems() {
+        tasks.sort();
+
+        alert("The list has been sorted.");
+
+        displayItems();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+    <p>
+      Enter a task below. Click Add to add the task, Delete Last Entry to remove
+      the last task on the list, or Sort to sort the list.
+    </p>
+
+    <p>
+      <input type="text" id="taskInput" />
+    </p>
+
+    <p>
+      <button type="button" id="addButton" onclick="addItem()">Add</button>
+
+      <button type="button" id="deleteButton" onclick="deleteLastItem()">
+        Delete Last Entry
+      </button>
+
+      <button type="button" id="sortButton" onclick="sortItems()">Sort</button>
+    </p>
+
+    <h2>To Do:</h2>
+
+    <ol id="toDoList"></ol>
+  </body>
+</html>
